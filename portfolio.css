@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #ddd;
+    background-color: #121212;
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background: #1c1c1c;
+    color: #ffcc00;
+    width: 250px;
+    padding: 2rem;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar nav ul li {
+    margin: 1rem 0;
+}
+
+.sidebar nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar nav a:hover {
+    color: #fff;
+}
+
+/* Main Content Styling */
+main {
+    margin-left: 250px;
+    padding: 2rem;
+    width: calc(100% - 250px);
+}
+
+.section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 8px;
+    background: #1c1c1c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+/* Home Section */
+.home p {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about .skills {
+    margin-top: 1.5rem;
+}
+
+.about .skills h3 {
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+}
+
+.about .skills ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.about .skills li {
+    background: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #ffcc00;
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ffcc00;
+}
+
+.project-card h3 {
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    background: #333;
+    color: #ddd;
+}
+
+button {
+    padding: 0.7rem;
+    border: none;
+    background-color: #ffcc00;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1c1c1c;
+    color: #aaa;
+    font-size: 0.9rem;
+}
